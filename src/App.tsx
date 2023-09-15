@@ -15,12 +15,22 @@ const router = createBrowserRouter([
 ]);
 
 const GlobalStyle = createGlobalStyle`
-    margin: 0;
+   html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+   }
+   *, body {
+    margin:0;
+   }
+   * {
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+   }
+   body {
     font-family: "Montserrat", "Noto Sans kr", sans-serif;
-    font-size: 16px;
+    background-color: #fff;
+   }
 `;
 
 function App() {
